@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #ebe9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+}
+
+.hero {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("./Images/bg.jpg") no-repeat center center;
+    height: 100vh;
+    min-width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .logo {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    color: #eee;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero .logo .logoimg {
+    width: 50px;
+    height: auto;
+}
+
+.hero .logo .header {
+    font-size: 2.7rem;
+    font-weight: 900;
+}
+.container {
+    height: 100vh;
+    background-color: #ffffff;
+}
+.mainText {
+    background-color: #d4d2d2;
+    padding: 2rem;
+    position: relative;
+    top: 0;
+}
+
+.mainText .text {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.form {
+    padding: 1rem;
+}
+
+.form p {
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div {
+    margin-bottom: 1rem;
+}
+
+form .inputField {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form .inputField label {
+    font-size: 0.8rem;
+    font-weight: 540;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form .inputField input {
+    font-size: 1.2rem;
+    width: 13rem;
+    background: transparent;
+    padding: 0.3rem 1rem;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    transition: all 150ms;
+    outline: none;
+}
+
+form .inputField input:focus {
+    background-color: transparent;
+    border: 3px solid #1a73e8;
+}
+.actionBtn .createAccount {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
