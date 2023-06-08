@@ -7,7 +7,6 @@
 body {
     width: 80%;
     margin: 0 auto;
-    align-items: center;
     background-color: #ebe9e9;
     display: flex;
     align-items: center;
@@ -98,11 +97,20 @@ form .inputField input {
     border-radius: 4px;
     transition: all 150ms;
     outline: none;
+    width: 90%;
 }
 
 form .inputField input:focus {
     background-color: transparent;
     border: 3px solid #1a73e8;
+}
+
+.actionBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
 }
 .actionBtn .createAccount {
     background-color: #596D48;
@@ -113,4 +121,69 @@ form .inputField input:focus {
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
+}
+
+.passwordSame {
+    text-align: center;
+    font-family: cursive;
+}
+.fade-in {
+    opacity: 0;
+}
+.fade-in.show {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width:1024px) {
+    body {
+        flex-direction: column;
+        width: 100%;
+    }
+    .hero {
+        width: 100vw;
+        height: 80vh;
+    }
+    .hero .logo {
+        width: 50%;
+        justify-content: space-evenly;
+    }
+    .hero .logo .header {
+        font-size: 5rem;
+    }
+    form .inputField {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-evenly;
+    }
+    form .inputField input {
+        width: 100%;
+    }
+    .container {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .hero {
+        height: 60vh;
+    }
+    form .inputField {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    form .inputField input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero .logo {
+        width: 100%;
+        justify-content: center;
+    }
+    .hero .logo .logoimg {
+        margin-right: 5px;
+    }
 }
