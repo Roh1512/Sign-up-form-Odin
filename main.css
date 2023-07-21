@@ -18,7 +18,7 @@ body {
 .hero {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url("./Images/bg.jpg") no-repeat center center;
-  height: 615px;
+  height: 625px;
   min-width: 40%;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ body {
   font-weight: 900;
 }
 .container {
-  height: auto;
+  height: 625px;
   background-color: #ffffff;
 }
 .mainText {
@@ -155,7 +155,7 @@ form .inputField input:focus {
   }
   .hero {
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
   }
   .hero .logo {
     width: 50%;
@@ -163,6 +163,9 @@ form .inputField input:focus {
   }
   .hero .logo .header {
     font-size: 5rem;
+  }
+  .container {
+    height: 100%;
   }
   form .inputField {
     width: 90%;
@@ -181,6 +184,9 @@ form .inputField input:focus {
 @media only screen and (max-width: 768px) {
   .hero {
     height: 60vh;
+  }
+  .container {
+    height: 100%;
   }
   form .inputField {
     width: 100%;
