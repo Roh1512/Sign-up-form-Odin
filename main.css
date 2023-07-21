@@ -12,16 +12,18 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #111;
+  height: 100%;
 }
 
 .hero {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url("./Images/bg.jpg") no-repeat center center;
-  height: 100vh;
+  height: 615px;
   min-width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: flex-start;
 }
 
 .hero .logo {
@@ -45,7 +47,7 @@ body {
   font-weight: 900;
 }
 .container {
-  height: 100vh;
+  height: auto;
   background-color: #ffffff;
 }
 .mainText {
