@@ -1,73 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Form</title>
-    <link rel="stylesheet" href="./main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
     <div class="hero" id="hero">
-        <div class="logo" id="logo">
-            <img src="./Images/logo.png" alt="Logo" class="logoimg" id="logoimg">
-            <h1 class="header">ODIN</h1>
-        </div>
+      <div class="logo" id="logo">
+        <img src="./Images/logo.png" alt="Logo" class="logoimg" id="logoimg" />
+        <h1 class="header">ODIN</h1>
+      </div>
     </div>
     <div class="container">
-        <div class="mainText" id="mainText">
-            <p class="text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus eaque, magnam iusto similique in quisquam
-                officia maiores itaque sapiente accusamus, labore porro nihil illo? Voluptates, amet eum. Reprehenderit,
-                voluptatibus saepe?<br><br>
-                You know you want to sign up.
-            </p>
-        </div>
-        <div class="form">
-            <p>Let's do this!</p><br><br>
-            <form action="#">
-                <div class="inputField">
-                    <div class="firstName">
-                        <label for="FirstName">FIRST NAME</label><br>
-                        <input type="text" name="FirstName" id="FirstName" class="field" required>
-                    </div>
-                    <div class="secondName">
-                        <label for="SecondName">SECOND NAME</label><br>
-                        <input type="text" name="SecondName" id="SecondName" class="field" required>
-                    </div>
-                </div>
-                <div class="inputField">
-                    <div class="email">
-                        <label for="email">EMAIL</label><br>
-                        <input type="email" name="email" id="email" class="field" required>
-                    </div>
-                    <div class="phone" required>
-                        <label for="phone">PHONE</label><br>
-                        <input type="number" name="phone" id="phone" class="field" required>
-                    </div>
-                </div>
-                <div class="inputField">
-                    <div class="enterPassword">
-                        <label for="password">PASSWORD</label><br>
-                        <input type="password" name="password" id="password" class="field password" required>
-                    </div>
-                    <div class="confirmPassword">
-                        <label for="confirmpassword">CONFIRM PASSWORD</label><br>
-                        <input type="password" name="confirmpassword" id="confirmPassword" class="field confirmpassword" required>
-                    </div>
-                </div>
-                <div class="passwordSame">
-                    <p id="checkPassword" class="fade-in"></p>
-                </div>
+      <div class="mainText" id="mainText">
+        <p class="text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
+          eaque, magnam iusto similique in quisquam officia maiores itaque
+          sapiente accusamus, labore porro nihil illo? Voluptates, amet eum.
+          Reprehenderit, voluptatibus saepe?<br /><br />
+          You know you want to sign up.
+        </p>
+      </div>
+      <div class="form" id="form">
+        <p>Let's do this!</p>
+        <br /><br />
+        <form action="#">
+          <div class="inputField">
+            <div class="firstName">
+              <label for="FirstName">FIRST NAME</label><br />
+              <input
+                type="text"
+                name="FirstName"
+                id="FirstName"
+                class="field"
+                required
+                minlength="3"
+                pattern="^[^\s]+$"
+              />
+            </div>
+            <div class="secondName">
+              <label for="SecondName">SECOND NAME</label><br />
+              <input
+                type="text"
+                name="SecondName"
+                id="SecondName"
+                class="field"
+                required
+                minlength="3"
+                pattern="^[^\s]+$"
+              />
+            </div>
+          </div>
+          <div class="inputField">
+            <div class="email">
+              <label for="email">EMAIL</label><br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="field"
+                required
+              />
+            </div>
+            <div class="phone" required>
+              <label for="phone">PHONE</label><br />
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                class="field"
+                required
+                pattern="^[0-9]{10}$"
+                maxlength="10"
+                minlength="10"
+              />
+            </div>
+          </div>
+          <div class="inputField">
+            <div class="enterPassword">
+              <label for="password">PASSWORD</label><br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="field password"
+                required
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$"
+                minlength="8"
+              />
+            </div>
+            <div class="confirmPassword">
+              <label for="confirmpassword">CONFIRM PASSWORD</label><br />
+              <input
+                type="password"
+                name="confirmpassword"
+                id="confirmPassword"
+                class="field confirmpassword"
+                required
+              />
+            </div>
+          </div>
+          <div class="passwordSame">
+            <p id="checkPassword" class="fade-in"></p>
+          </div>
 
-                <div class="actionBtn">
-                    <button id = "btn" class="createAccount" type="submit">Create Account</button><br><br>
-                    <p>Already Have an Account? <a href="#" class="login">Log in</a></p>
-                </div>
-            </form>
-        </div>
+          <div class="actionBtn">
+            <button id="btn" class="createAccount" type="submit">
+              Create Account</button
+            ><br /><br />
+            <p>Already Have an Account? <a href="#" class="login">Log in</a></p>
+          </div>
+        </form>
+      </div>
     </div>
 
     <script src="./main.js" defer></script>
-</body>
+  </body>
 </html>
